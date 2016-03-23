@@ -1,5 +1,9 @@
-<ion-view view-title="More">
+<ion-view view-title="More Forms">
   <ion-content>
-
+  	<ion-list>
+  		<ion-item ng-repeat="listitem in list" href="/#{{ listitem.url }}">
+  			{{ listitem.name }}
+  		</ion-item>
+  	</ion-list>
   </ion-content>
 </ion-view>
