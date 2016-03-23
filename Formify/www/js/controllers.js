@@ -8,35 +8,20 @@ angular.module('formify.controller', ['ngCordova'])
 		$state.go('moreforms');
 	};
 })
-.controller('formCtrl', function($scope,$ionicPlatform){
-	$scope.sending = function(){
-		$ionicPlatform.ready(function(){
-		// cordova.plugins.email.isAvailable().then(function() {
-		// 	console.log('sending');
-		//    var email = {
-		//     to: 'weipeng.wu@scotiabank.com',
-		//     subject: 'Formify Request',
-		//     body: 'How are you? Nice greetings from Leipzig',
-		//     isHtml: true
-		//   };
-		//   cordova.plugins.email.open(email).then(null, function () {
-		//    	// user cancelled email
-		//  	});
-		//  }, function () {
-		//    console.log('you need to set up your email account first');
-		//  });
+.controller('formCtrl', function($scope){
+	$scope.sending = function(user){
+		// console.log(user);
 		cordova.plugins.email.isAvailable(
 			function(){
 				var email = {
 				    to: 'weipeng.wu@scotiabank.com',
 				    subject: 'Formify Request',
-				    body: 'How are you? Nice greetings from Leipzig',
+				    body: '<h4>Consillium Onboard/Offboarding Form Request</h4><div>First Name: '+user.fname+'<br>Last Name: '+user.lname+'<br>Email Address: '+user.email+'<br>Gender: '+user.gender+'<br>Title: '+user.title+'<br>Message: '+user.message+'</div>',
 				    isHtml: true
 				  };
 		  		cordova.plugins.email.open(email);
 			}
 		)
-		})
 	}
 })
 .controller('moreformsCtrl', function($scope, Formlist){
