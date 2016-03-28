@@ -3,6 +3,7 @@
   <ion-content>
   	<ion-list>
   		<ion-item ng-repeat="listitem in list" href="{{ listitem.url }}">
+  			<a href=""><span class="{{listitem.test}}"></span></a>
   			{{ listitem.name }}
   		</ion-item>
   	</ion-list>
