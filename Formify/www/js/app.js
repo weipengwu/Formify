@@ -22,6 +22,9 @@ angular.module('formify', ['ionic', 'formify.controller', 'formify.services'])
     }
   });
 })
+.config(function($ionicConfigProvider) {
+    $ionicConfigProvider.backButton.text('');
+})
 
 .config(function($stateProvider, $urlRouterProvider){
   $stateProvider

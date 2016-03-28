@@ -7,36 +7,36 @@
     </label>
     <label class="item item-input item-select">
       <div class="input-label">Staff Type</div>
-      <select ng-model="staff.type">
+      <select ng-model="staff.type" ng-init="staff.type = 'Full Time'">
         <option value="Full Time" ng-selected="true">Full Time</option>
         <option value="Contrator">Contractor</option>
       </select>
     </label>
     <label class="item item-input">
       <span class="input-label">Start Date</span>
-      <input type="text" name="startdate" placeholder="Required" ng-model="staff.startdate">
+      <input type="text" name="startdate" placeholder="Required" ng-init="staff.startdate = ''" ng-model="staff.startdate">
     </label>
     <label class="item item-input">
       <span class="input-label">End Date</span>
-      <input type="text" name="enddate" placeholder="Required" ng-model="staff.enddate">
+      <input type="text" name="enddate" placeholder="Required" ng-init="staff.enddate = ''" ng-model="staff.enddate">
     </label>
     <label class="item item-input">
       <span class="input-label">Director</span>
-      <input type="text" name="director" placeholder="Required" ng-model="staff.director">
+      <input type="text" name="director" placeholder="Required" ng-init="staff.director = ''" ng-model="staff.director">
     </label>
     <label class="item item-input">
       <span class="input-label">VP</span>
-      <input type="text" name="vp" placeholder="Required" ng-model="staff.vp">
+      <input type="text" name="vp" placeholder="Required" ng-init="staff.vp = ''" ng-model="staff.vp">
     </label>
     <label class="item item-input">
       <span class="input-label">Email Address</span>
-      <input type="text" name="emailaddress" placeholder="(If Known)" ng-model="staff.email">
+      <input type="text" name="emailaddress" placeholder="(If Known)" ng-init="staff.email = ''" ng-model="staff.email">
     </label>
     <label class="item item-input item-select">
       <div class="input-label">
         Floor
       </div>
-      <select ng-model="staff.floor">
+      <select ng-model="staff.floor" ng-init="staff.floor = '11th'">
         <option value="11th" ng-selected="true">11th</option>
         <option value="13th">13th</option>
         <option value="14th">14th</option>
@@ -49,45 +49,45 @@
     </label>
     <label class="item item-input item-stacked-label">
       <span class="input-label">Additional Comments</span>
-      <textarea placeholder="Write down your comments..." name="comments" ng-model="staff.comments"></textarea>
+      <textarea placeholder="Write down your comments..." ng-init="staff.comments = ''" name="comments" ng-model="staff.comments"></textarea>
     </label>
     <h5 class="sectionheader">SECTION 4 | NEW STAFF</h5>
     <label class="item item-input item-select">
       Parking pass required
-        <select ng-model="staff.parkingpass">
-          <option value="Yes" ng-selected="true">Yes</option>
-          <option value="No">No</option>
+        <select ng-model="staff.parkingpass" ng-init="staff.parkingpass = 'No'">
+          <option value="Yes">Yes</option>
+          <option value="No" ng-selected="true">No</option>
         </select>
     </label>
     <label class="item item-input item-stacked-label">
       <span class="input-label">If yes, how many days a week do they drive?</span>
-      <input type="text" name="parkdays" placeholder="" ng-model="staff.parkdays">
+      <input type="text" name="parkdays" placeholder="" ng-init="staff.parkdays = ''" ng-model="staff.parkdays">
     </label>
     <label class="item item-input item-select">
       Building pass required
-        <select ng-model="staff.buildingpass">
-          <option value="Yes" ng-selected="true">Yes</option>
-          <option value="No">No</option>
+        <select ng-model="staff.buildingpass" ng-init="staff.buildingpass = 'No'">
+          <option value="Yes">Yes</option>
+          <option value="No" ng-selected="true">No</option>
         </select>
     </label>
     <label class="item item-input item-stacked-label">
       <span class="input-label">If yes, how many days a week will they be on-site?</span>
-      <input type="text" name="onsitedays" placeholder="" ng-model="staff.onsitedays">
+      <input type="text" name="onsitedays" placeholder="" ng-init="staff.onsitedays = ''" ng-model="staff.onsitedays">
     </label>
     <label class="item item-input item-select">
       Desk space identified
-        <select ng-model="staff.deskidentified">
-          <option value="Yes" ng-selected="true">Yes</option>
-          <option value="No">No</option>
+        <select ng-model="staff.deskidentified" ng-init="staff.deskidentified = 'No'">
+          <option value="Yes">Yes</option>
+          <option value="No" ng-selected="true">No</option>
         </select>
     </label>
-    <label class="item item-input">
+    <label class="item item-input item-stacked-label">
       <span class="input-label">If yes, provide Workstation #</span>
-      <input type="text" name="workstation" placeholder="" ng-model="staff.workstation">
+      <input type="text" name="workstation" placeholder="" ng-init="staff.workstation = ''" ng-model="staff.workstation">
     </label>
     <label class="item item-input">
       <span class="input-label">Key Lock #</span>
-      <input type="text" name="keylock" placeholder="" ng-model="staff.keylock">
+      <input type="text" name="keylock" placeholder="" ng-init="staff.keylock = ''" ng-model="staff.keylock">
     </label>
   <div class="padding">
     <button class="button button-block button-assertive" ng-click="sending(staff)">

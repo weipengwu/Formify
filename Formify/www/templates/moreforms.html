@@ -2,8 +2,8 @@
   <search-bar ng-model="search"></search-bar>
   <ion-content>
   	<ion-list>
-  		<ion-item ng-repeat="listitem in list" href="{{ listitem.url }}">
-  			{{ listitem.name }}
+  		<ion-item ng-repeat="listitem in list" href="#{{ listitem.url }}">
+  			<a href="">info</a> {{ listitem.name }}
   		</ion-item>
   	</ion-list>
   </ion-content>
