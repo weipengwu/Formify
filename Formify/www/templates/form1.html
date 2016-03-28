@@ -1,44 +1,96 @@
 <ion-view view-title="Consillium Onboard/Offboarding Form">
   <ion-content>
+    <h5 class="sectionheader">SECTION 1 | MANDATORY FOR ALL REQUESTS</h5>
     <label class="item item-input">
-      <span class="input-label">First Name</span>
-      <input type="text" name="fname" placeholder="Required" ng-model="user.fname">
+      <span class="input-label">Name of Staff</span>
+      <input type="text" name="name" placeholder="Required" ng-model="staff.name">
+    </label>
+    <label class="item item-input item-select">
+      <div class="input-label">Staff Type</div>
+      <select ng-model="staff.type">
+        <option value="Full Time" ng-selected="true">Full Time</option>
+        <option value="Contrator">Contractor</option>
+      </select>
     </label>
     <label class="item item-input">
-      <span class="input-label">Last Name</span>
-      <input type="text" name="lname" placeholder="Required" ng-model="user.lname">
+      <span class="input-label">Start Date</span>
+      <input type="text" name="startdate" placeholder="Required" ng-model="staff.startdate">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">End Date</span>
+      <input type="text" name="enddate" placeholder="Required" ng-model="staff.enddate">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Director</span>
+      <input type="text" name="director" placeholder="Required" ng-model="staff.director">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">VP</span>
+      <input type="text" name="vp" placeholder="Required" ng-model="staff.vp">
     </label>
     <label class="item item-input">
       <span class="input-label">Email Address</span>
-      <input type="text" name="emailaddress" placeholder="Required" ng-model="user.email">
+      <input type="text" name="emailaddress" placeholder="(If Known)" ng-model="staff.email">
     </label>
     <label class="item item-input item-select">
       <div class="input-label">
-        Gender
+        Floor
       </div>
-      <select ng-model="user.gender">
-        <option value="Female" selected>Female</option>
-        <option value="Male">Male</option>
-      </select>
-    </label>
-    <label class="item item-input item-select">
-      <div class="input-label">
-        Title
-      </div>
-      <select ng-model="user.title">
-        <option value="Director" selected>Director</option>
-        <option value="Manager">Manager</option>
-        <option value="Solution Architect">Solution Architect</option>
-        <option value="Team Lead">Team Lead</option>
-        <option value="Developer">Developer</option>
+      <select ng-model="staff.floor">
+        <option value="11th" ng-selected="true">11th</option>
+        <option value="13th">13th</option>
+        <option value="14th">14th</option>
+        <option value="15th">15th</option>
+        <option value="16th">16th</option>
+        <option value="17th">17th</option>
+        <option value="18th">18th</option>
+        <option value="RAC-102">RAC-102</option>
       </select>
     </label>
     <label class="item item-input item-stacked-label">
-    <span class="input-label">Message</span>
-    <textarea placeholder="Write down your thoughts..." name="message" ng-model="user.message"></textarea>
-  </label>
+      <span class="input-label">Additional Comments</span>
+      <textarea placeholder="Write down your comments..." name="comments" ng-model="staff.comments"></textarea>
+    </label>
+    <h5 class="sectionheader">SECTION 4 | NEW STAFF</h5>
+    <label class="item item-input item-select">
+      Parking pass required
+        <select ng-model="staff.parkingpass">
+          <option value="Yes" ng-selected="true">Yes</option>
+          <option value="No">No</option>
+        </select>
+    </label>
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">If yes, how many days a week do they drive?</span>
+      <input type="text" name="parkdays" placeholder="" ng-model="staff.parkdays">
+    </label>
+    <label class="item item-input item-select">
+      Building pass required
+        <select ng-model="staff.buildingpass">
+          <option value="Yes" ng-selected="true">Yes</option>
+          <option value="No">No</option>
+        </select>
+    </label>
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">If yes, how many days a week will they be on-site?</span>
+      <input type="text" name="onsitedays" placeholder="" ng-model="staff.onsitedays">
+    </label>
+    <label class="item item-input item-select">
+      Desk space identified
+        <select ng-model="staff.deskidentified">
+          <option value="Yes" ng-selected="true">Yes</option>
+          <option value="No">No</option>
+        </select>
+    </label>
+    <label class="item item-input">
+      <span class="input-label">If yes, provide Workstation #</span>
+      <input type="text" name="workstation" placeholder="" ng-model="staff.workstation">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Key Lock #</span>
+      <input type="text" name="keylock" placeholder="" ng-model="staff.keylock">
+    </label>
   <div class="padding">
-    <button class="button button-block button-assertive" ng-click="sending(user)">
+    <button class="button button-block button-assertive" ng-click="sending(staff)">
       SEND
     </button>
   </div>

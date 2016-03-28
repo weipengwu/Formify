@@ -1,7 +1,8 @@
 <ion-view view-title="More Forms">
+  <search-bar ng-model="search"></search-bar>
   <ion-content>
   	<ion-list>
-  		<ion-item ng-repeat="listitem in list" href="/#{{ listitem.url }}">
+  		<ion-item ng-repeat="listitem in list" href="{{ listitem.url }}">
   			{{ listitem.name }}
   		</ion-item>
   	</ion-list>

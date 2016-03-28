@@ -1,0 +1,33 @@
+<ion-view view-title="Join Formify">
+  <ion-content>
+    <label class="item item-input">
+      <span class="input-label">Name</span>
+      <input type="text" name="name" placeholder="Required" ng-model="join.name">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Email</span>
+      <input type="text" name="email" placeholder="Required" ng-model="join.email">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Department</span>
+      <input type="text" name="department" placeholder="Required" ng-model="join.department">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Transit Number</span>
+      <input type="text" name="transitnumber" placeholder="Required" ng-model="join.transitnumber">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Description of Form</span>
+      <input type="text" name="description" placeholder="Required" ng-model="join.description">
+    </label>
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">Additional Comments</span>
+      <textarea placeholder="Write down your comments..." name="comments" ng-model="join.comments"></textarea>
+    </label>
+  <div class="padding">
+    <button class="button button-block button-assertive" ng-click="sending(join)">
+      SEND
+    </button>
+  </div>
+  </ion-content>
+</ion-view>
