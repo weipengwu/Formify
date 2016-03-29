@@ -47,16 +47,11 @@ angular.module('formify.controller', ['ngCordova'])
 })
 
 .controller('PopupCtrl',function($scope, $ionicPopup, $timeout) {
-
-
    // An alert dialog
    $scope.showAlert = function() {
      var alertPopup = $ionicPopup.alert({
-       title: 'Don\'t eat that!',
-       template: 'It might taste good'
+       title: 'Consillium Onboard/Offboarding Form',
+       template: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.'
      });
-     // alertPopup.then(function(res) {
-     //   console.log('Thank you for not eating my delicious ice cream cone');
-     // });
    };
 })

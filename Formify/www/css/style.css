@@ -80,10 +80,28 @@
 	border-radius: 4px;
 }
 button.ion-ios-information-outline {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
+    border: none;
+    background: none;
+    color: #4A81E2;
+    width: 100%;
 }
-.formList.span{
+.button.button-positive{
+	background-color:#e42112;
+}
+.formList{
+	border-bottom: 1px solid #ddd;
+}
+.formList a {
+    display: inline-block;
+    width: 85%;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #555;
+    font-size: 20px;
+}
+.formList span{
 	display: inline-block;
-    float: right;
+    width: 13%;
 }
