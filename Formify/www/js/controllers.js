@@ -45,3 +45,18 @@ angular.module('formify.controller', ['ngCordova'])
 .controller('moreformsCtrl', function($scope, Formlist){
 	$scope.list = Formlist.all();
 })
+
+.controller('PopupCtrl',function($scope, $ionicPopup, $timeout) {
+
+
+   // An alert dialog
+   $scope.showAlert = function() {
+     var alertPopup = $ionicPopup.alert({
+       title: 'Don\'t eat that!',
+       template: 'It might taste good'
+     });
+     // alertPopup.then(function(res) {
+     //   console.log('Thank you for not eating my delicious ice cream cone');
+     // });
+   };
+})

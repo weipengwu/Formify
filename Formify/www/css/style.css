@@ -79,3 +79,11 @@
 	background: #fff;
 	border-radius: 4px;
 }
+button.ion-ios-information-outline {
+    font-size: 20px;
+    font-weight: bold;
+}
+.formList.span{
+	display: inline-block;
+    float: right;
+}

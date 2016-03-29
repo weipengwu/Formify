@@ -4,39 +4,39 @@ angular.module('formify.services', [])
 	var list = [{
 		name: 'Consillium Onboard/Offboarding Form',
 		url: '/form1',
-		test: 'ion-information-circled'
+		infoIcon: 'ion-ios-information-outline'
 	},{
 		name: 'Business Card Request Form',
 		url: '/form2',
-		test: 'ion-information-circled'
+		infoIcon: 'ion-ios-information-outline'
 	},{
 		name: '2201 Parking Request Form',
 		url: '/form3',
-		test: 'ion-information-circled'
+		infoIcon: 'ion-ios-information-outline'
 	},{
 		name: 'Employee Badge Access Form',
 		url: '/form4',
-		test: 'ion-information-circled'
+		infoIcon: 'ion-ios-information-outline'
 	},{
 		name: 'Consillium Parking Request Form',
 		url: '/form5',
-		test: 'ion-information-circled'
+		infoIcon: 'ion-ios-information-outline'
 	},{
 		name: 'Host on Demand Account Access Form',
 		url: '/form6',
-		test: 'ion-information-circled'
+		infoIcon: 'ion-ios-information-outline'
 	},{
 		name: 'IT-Store Account Access Form',
 		url: '/form7',
-		test: 'ion-information-circled'
+		infoIcon: 'ion-ios-information-outline'
 	},{
 		name: 'Operational Readiness Submission Form',
 		url: '/form8',
-		test: 'ion-information-circled'
+		infoIcon: 'ion-ios-information-outline'
 	},{
 		name: 'Intralink Account Creation Form',
 		url: '/form9',
-		test: 'ion-information-circled'
+		infoIcon: 'ion-ios-information-outline'
 	}];
 
 	return {
