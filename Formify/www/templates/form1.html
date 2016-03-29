@@ -14,19 +14,19 @@
     </label>
     <label class="item item-input">
       <span class="input-label">Start Date</span>
-      <input type="text" name="startdate" placeholder="Required" ng-init="staff.startdate = ''" ng-model="staff.startdate">
+      <input type="text" name="startdate" placeholder="Required" ng-init="staff.startdate = '2016-03-25'" ng-model="staff.startdate">
     </label>
     <label class="item item-input">
       <span class="input-label">End Date</span>
-      <input type="text" name="enddate" placeholder="Required" ng-init="staff.enddate = ''" ng-model="staff.enddate">
+      <input type="text" name="enddate" ng-init="staff.enddate = ''" ng-model="staff.enddate">
     </label>
     <label class="item item-input">
       <span class="input-label">Director</span>
-      <input type="text" name="director" placeholder="Required" ng-init="staff.director = ''" ng-model="staff.director">
+      <input type="text" name="director" placeholder="Required" ng-init="staff.director = 'Sasha'" ng-model="staff.director">
     </label>
     <label class="item item-input">
       <span class="input-label">VP</span>
-      <input type="text" name="vp" placeholder="Required" ng-init="staff.vp = ''" ng-model="staff.vp">
+      <input type="text" name="vp" placeholder="Required" ng-init="staff.vp = 'Ali'" ng-model="staff.vp">
     </label>
     <label class="item item-input">
       <span class="input-label">Email Address</span>
@@ -54,25 +54,25 @@
     <h5 class="sectionheader">SECTION 4 | NEW STAFF</h5>
     <label class="item item-input item-select">
       Parking pass required
-        <select ng-model="staff.parkingpass" ng-init="staff.parkingpass = 'No'">
-          <option value="Yes">Yes</option>
-          <option value="No" ng-selected="true">No</option>
+        <select ng-model="staff.parkingpass" ng-init="staff.parkingpass = 'Yes'">
+          <option value="Yes" ng-selected="true">Yes</option>
+          <option value="No">No</option>
         </select>
     </label>
     <label class="item item-input item-stacked-label">
       <span class="input-label">If yes, how many days a week do they drive?</span>
-      <input type="text" name="parkdays" ng-init="staff.parkdays = ''" ng-model="staff.parkdays">
+      <input type="text" name="parkdays" ng-init="staff.parkdays = '5'" ng-model="staff.parkdays">
     </label>
     <label class="item item-input item-select">
       Building pass required
-        <select ng-model="staff.buildingpass" ng-init="staff.buildingpass = 'No'">
-          <option value="Yes">Yes</option>
-          <option value="No" ng-selected="true">No</option>
+        <select ng-model="staff.buildingpass" ng-init="staff.buildingpass = 'Yes'">
+          <option value="Yes" ng-selected="true">Yes</option>
+          <option value="No">No</option>
         </select>
     </label>
     <label class="item item-input item-stacked-label">
       <span class="input-label">If yes, how many days a week will they be on-site?</span>
-      <input type="text" name="onsitedays" ng-init="staff.onsitedays = ''" ng-model="staff.onsitedays">
+      <input type="text" name="onsitedays" ng-init="staff.onsitedays = '5'" ng-model="staff.onsitedays">
     </label>
     <label class="item item-input item-select">
       Desk space identified

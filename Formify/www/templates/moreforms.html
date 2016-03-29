@@ -8,7 +8,7 @@
   		<div ng-repeat="listitem in list | filter:userSearch" class="formList">
   			<a href="#{{ listitem.url }}">{{ listitem.name }}</a>
   			<span ng-controller="PopupCtrl">
-  			<button ng-click="showAlert()" class="{{listitem.infoIcon}}"></button>
+  			<button ng-click="showAlert(listitem.name,listitem.desc)" class="ion-ios-information-outline"></button>
   			</span>
   		</div>
   	</ion-list>

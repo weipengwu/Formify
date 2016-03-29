@@ -4,39 +4,39 @@ angular.module('formify.services', [])
 	var list = [{
 		name: 'Consillium Onboard/Offboarding Form',
 		url: '/form1',
-		infoIcon: 'ion-ios-information-outline'
+		desc: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.'
 	},{
 		name: 'Business Card Request Form',
 		url: '/form2',
-		infoIcon: 'ion-ios-information-outline'
+		desc: 'Est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.'
 	},{
 		name: '2201 Parking Request Form',
 		url: '/form3',
-		infoIcon: 'ion-ios-information-outline'
+		desc: 'Duis non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.'
 	},{
 		name: 'Employee Badge Access Form',
 		url: '/form4',
-		infoIcon: 'ion-ios-information-outline'
+		desc: 'Uis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.'
 	},{
 		name: 'Consillium Parking Request Form',
 		url: '/form5',
-		infoIcon: 'ion-ios-information-outline'
+		desc: 'Is mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.'
 	},{
 		name: 'Host on Demand Account Access Form',
 		url: '/form6',
-		infoIcon: 'ion-ios-information-outline'
+		desc: 'Les mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.'
 	},{
 		name: 'IT-Store Account Access Form',
 		url: '/form7',
-		infoIcon: 'ion-ios-information-outline'
+		desc: 'Kmollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.'
 	},{
 		name: 'Operational Readiness Submission Form',
 		url: '/form8',
-		infoIcon: 'ion-ios-information-outline'
+		desc: 'Uuis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.'
 	},{
 		name: 'Intralink Account Creation Form',
 		url: '/form9',
-		infoIcon: 'ion-ios-information-outline'
+		desc: 'Ghis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.'
 	}];
 
 	return {
