@@ -67,7 +67,7 @@ angular.module('formify', ['ionic', 'formify.controller', 'formify.services'])
               '<div class="searchTxt" ng-show="ngModel.show">'+
                   '<div class="bgdiv"></div>'+
                   '<div class="bgtxt">'+
-                    '<input type="text" placeholder="Procurar..." ng-model="ngModel.txt">'+
+                    '<input type="text" placeholder="Search Forms..." ng-model="ngModel.txt">'+
                   '</div>'+
                 '</div>'+
                 '<i class="icon placeholder-icon" ng-click="ngModel.txt=\'\';ngModel.show=!ngModel.show"></i>'+

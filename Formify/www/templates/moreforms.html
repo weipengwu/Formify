@@ -1,9 +1,12 @@
 <ion-view view-title="More Forms">
-  <search-bar ng-model="search"></search-bar>
   <ion-content>
+  	<label class="item item-input item-search">
+      <input type="text" name="name" placeholder="Search Forms..." ng-model="userSearch.name">
+    </label>
   	<ion-list>
-  		<ion-item ng-repeat="listitem in list" href="#{{ listitem.url }}">
-  			<a href="">info</a> {{ listitem.name }}
+  		<ion-item ng-repeat="listitem in list | filter:userSearch" href="#{{ listitem.url }}">
+  			<a href=""><span class="{{listitem.test}}"></span></a>
+  			{{ listitem.name }}
   		</ion-item>
   	</ion-list>
   </ion-content>

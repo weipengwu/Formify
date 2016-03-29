@@ -3,7 +3,7 @@
     <h5 class="sectionheader">SECTION 1 | MANDATORY FOR ALL REQUESTS</h5>
     <label class="item item-input">
       <span class="input-label">Name of Staff</span>
-      <input type="text" name="name" placeholder="Required" ng-model="staff.name">
+      <input type="text" name="name" placeholder="Required" ng-init="staff.name = 'Weipeng'" ng-model="staff.name">
     </label>
     <label class="item item-input item-select">
       <div class="input-label">Staff Type</div>
@@ -30,7 +30,7 @@
     </label>
     <label class="item item-input">
       <span class="input-label">Email Address</span>
-      <input type="text" name="emailaddress" placeholder="(If Known)" ng-init="staff.email = ''" ng-model="staff.email">
+      <input type="email" name="emailaddress" placeholder="(If Known)" ng-init="staff.email = ''" ng-model="staff.email">
     </label>
     <label class="item item-input item-select">
       <div class="input-label">
@@ -61,7 +61,7 @@
     </label>
     <label class="item item-input item-stacked-label">
       <span class="input-label">If yes, how many days a week do they drive?</span>
-      <input type="text" name="parkdays" placeholder="" ng-init="staff.parkdays = ''" ng-model="staff.parkdays">
+      <input type="text" name="parkdays" ng-init="staff.parkdays = ''" ng-model="staff.parkdays">
     </label>
     <label class="item item-input item-select">
       Building pass required
@@ -72,22 +72,22 @@
     </label>
     <label class="item item-input item-stacked-label">
       <span class="input-label">If yes, how many days a week will they be on-site?</span>
-      <input type="text" name="onsitedays" placeholder="" ng-init="staff.onsitedays = ''" ng-model="staff.onsitedays">
+      <input type="text" name="onsitedays" ng-init="staff.onsitedays = ''" ng-model="staff.onsitedays">
     </label>
     <label class="item item-input item-select">
       Desk space identified
-        <select ng-model="staff.deskidentified" ng-init="staff.deskidentified = 'No'">
+        <select ng-model="staff.deskidentified" ng-init="staff.deskidentified = 'Yes'">
           <option value="Yes">Yes</option>
           <option value="No" ng-selected="true">No</option>
         </select>
     </label>
     <label class="item item-input item-stacked-label">
       <span class="input-label">If yes, provide Workstation #</span>
-      <input type="text" name="workstation" placeholder="" ng-init="staff.workstation = ''" ng-model="staff.workstation">
+      <input type="text" name="workstation" placeholder="" ng-init="staff.workstation = '13'" ng-model="staff.workstation">
     </label>
     <label class="item item-input">
       <span class="input-label">Key Lock #</span>
-      <input type="text" name="keylock" placeholder="" ng-init="staff.keylock = ''" ng-model="staff.keylock">
+      <input type="text" name="keylock" placeholder="" ng-init="staff.keylock = '209'" ng-model="staff.keylock">
     </label>
   <div class="padding">
     <button class="button button-block button-assertive" ng-click="sending(staff)">
