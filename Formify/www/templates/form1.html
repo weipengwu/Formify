@@ -1,6 +1,7 @@
 <ion-view view-title="Consillium Onboard/Offboarding Form">
   <ion-content>
     <h5 class="sectionheader">SECTION 1 | MANDATORY FOR ALL REQUESTS</h5>
+    <input type="hidden" value="Onboard" ng-model="staff.formname"></input>
     <label class="item item-input">
       <span class="input-label">Name of Staff</span>
       <input type="text" name="name" placeholder="Required" ng-init="staff.name = 'Weipeng'" ng-model="staff.name">
