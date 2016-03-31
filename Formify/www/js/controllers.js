@@ -13,6 +13,7 @@ angular.module('formify.controller', ['ngCordova'])
 })
 .controller('formCtrl', function($scope){
 	$scope.sending = function(staff){
+		console.log(staff.formname);
 		cordova.plugins.email.isAvailable(
 			function(){
 				switch(staff.formname){
